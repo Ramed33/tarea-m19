@@ -1,0 +1,256 @@
+.products__btn {
+    @extend %button;
+    background-color: #fff;
+}
+
+.products__btn--disable {
+    @extend %button;
+    background-color: #888;
+}
+
+main {
+    display: flex;
+    @include phones {
+        display:initial;
+    }
+    
+    .sidebar{
+
+        width: $mainWidth;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        background-color: $mainColor;
+        @include phones {
+            width: $mainWidth;
+            margin: auto;
+        }
+
+       .header {
+                padding: 10px;
+                box-sizing: border-box;
+                @include flexbox;
+                justify-content: space-between;
+                background-color: $mainColor;  
+
+                .header__logo {
+                    width: 130px;
+                }
+        }
+
+        .search {
+            .search__menu {
+                display: grid; 
+                grid-template-columns: 0.5fr 1fr 1.5fr 0.5fr;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: #131515;
+
+                .search__button {
+                    color: #ffffff;
+                    background-color: #111212;
+                    opacity: 0.4;                            
+                }
+                .search__icon-1 {
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        .menu {
+            padding: 10px;
+
+            .menu__title {
+                opacity: 0.4;
+            }
+
+            .home, .discover, .radio, .artists, .albums, .podcasts {
+                @include xgrid;   
+            }
+
+            .discover {
+                opacity: 0.4;
+            }
+
+            .radio {
+
+                .radio__title {
+                    opacity: 0.4;
+                }
+                .radio__on {
+                    color: #adff2f;
+                    text-align: center; 
+                }
+            }
+            .artists {
+                
+                .artists__title{
+                    opacity: 0.4;
+                }
+            }
+            .albums {
+
+                .albums__title {
+                    opacity: 0.4;
+                }
+            }
+            .podcasts {
+                
+                .podcasts__title {
+                    opacity: 0.4;
+                }     
+            }
+       }
+       
+       .playlist {
+
+            padding: 10px;
+
+            .top, .dance, .discover {
+            @include xgrid;  
+            }
+
+            .add {   
+                display: grid;
+                grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
+                align-items: center;
+
+                .add__title { 
+                    opacity: 0.4;
+                }
+            }
+
+            .top {
+
+                .top__icon{
+                    opacity: 0.5;
+                }
+
+                .top__title{
+                    opacity: 0.6;
+                }
+                
+                .top__trash{
+                    opacity: 0.4;
+                }
+            }
+
+            .dance {
+
+                .dance__icon {
+                    opacity: 0.5;
+                }
+
+                .dance__title {
+                    opacity: 0.6;
+                }
+
+                .dance__trash {
+                    opacity: 0.4
+                }   
+            }
+
+            .discover {
+
+                .discover__icon {
+                    opacity: 0.8;
+                }
+
+                .discover__title {
+                    opacity: 0.9
+                }
+
+                .discover__pause {
+                    opacity: 1;
+                }
+
+                .discover__trash {
+                    opacity: 0.4;
+                }
+            }
+       }
+
+       .playing {
+
+            @include flexbox;
+            padding: 10px;
+            
+            .playing__song-next {
+                opacity: 0.7;
+            }
+       }
+    
+       .controls {
+
+            padding: 10px;
+
+            .controls__menu {
+
+                @include xgrid;
+
+                .controls__range {
+                    width: min-content;
+                    accent-color: #adff2f;
+                }
+            }
+       }
+
+    }
+
+    .anexo {
+        padding: 10px;
+        background-color: #0e0505;
+        font-size: 16px;
+        @include phones {
+            width: $mainWidth;
+            padding: 5px 5px;
+            margin: auto;
+            background-color:#2a1b1b;
+        }
+
+        img {
+            @include image(200px,circle);
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+            .anexo__resume {
+                p {
+                &:first-child {
+                font-size: 14px;
+            }
+                &:last-child {
+                font-size: 18px;
+            }
+            }
+
+            }
+        
+
+        .anexo__music {
+            .music__album {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                @include laptops {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                @include tablets{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                @include phones{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+                .music__item {
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,55 @@
+$mainColor: #272828;
+$fontFamily: Arial, Helvetica, sans-serif;
+$whiteColor: #e2e2e2;
+$mainWidth: 330px;
+
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin xgrid {
+        display: grid; 
+        grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+        align-items: center;    
+}
+
+@mixin image($size, $type) {
+    width: $size;
+    height: $size;
+
+    @if $type == circle {
+        border-radius: 50%;     
+    } @else {
+        border-radius: 10px;
+    } 
+}
+
+@mixin laptops {
+    @media screen and (max-width: 70rem) { @content };
+}
+
+@mixin tablets {
+    @media screen and (max-width: 60rem) { @content };
+}
+
+@mixin phones {
+    @media screen and (max-width: 48rem) { @content };
+}
+
+@function rem-pixel ($rem, $quantity) { 
+    @if $rem == rem {
+        $result : $rem * 16;     
+    } @else {
+        $result : $pixel / 16;
+    }
+    @return $result;
+}
+
+%button {
+    cursor: pointer;            
+    border-radius: 20px;
+    width: 50%;
+    font-weight: 700;    
+}

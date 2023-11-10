@@ -1,0 +1,220 @@
+main .anexo .products__btn--disable, main .anexo .products__btn {
+  cursor: pointer;
+  border-radius: 20px;
+  width: 50%;
+  font-weight: 700;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e2e2e2;
+  font-weight: 600;
+  background-color: #2a1b1b;
+}
+
+main {
+  display: flex;
+}
+@media screen and (max-width: 48rem) {
+  main {
+    display: initial;
+  }
+}
+main .sidebar {
+  width: 330px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  background-color: #272828;
+}
+@media screen and (max-width: 48rem) {
+  main .sidebar {
+    width: 330px;
+    margin: auto;
+  }
+}
+main .sidebar .header {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #272828;
+}
+main .sidebar .header .header__logo {
+  width: 130px;
+}
+main .sidebar .search .search__menu {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1.5fr 0.5fr;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #131515;
+}
+main .sidebar .search .search__menu .search__button {
+  color: #ffffff;
+  background-color: #111212;
+  opacity: 0.4;
+}
+main .sidebar .search .search__menu .search__icon-1 {
+  opacity: 0.4;
+}
+main .sidebar .menu {
+  padding: 10px;
+}
+main .sidebar .menu .menu__title {
+  opacity: 0.4;
+}
+main .sidebar .menu .home, main .sidebar .menu .discover, main .sidebar .menu .radio, main .sidebar .menu .artists, main .sidebar .menu .albums, main .sidebar .menu .podcasts {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+  align-items: center;
+}
+main .sidebar .menu .discover {
+  opacity: 0.4;
+}
+main .sidebar .menu .radio .radio__title {
+  opacity: 0.4;
+}
+main .sidebar .menu .radio .radio__on {
+  color: #adff2f;
+  text-align: center;
+}
+main .sidebar .menu .artists .artists__title {
+  opacity: 0.4;
+}
+main .sidebar .menu .albums .albums__title {
+  opacity: 0.4;
+}
+main .sidebar .menu .podcasts .podcasts__title {
+  opacity: 0.4;
+}
+main .sidebar .playlist {
+  padding: 10px;
+}
+main .sidebar .playlist .top, main .sidebar .playlist .dance, main .sidebar .playlist .discover {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+  align-items: center;
+}
+main .sidebar .playlist .add {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+}
+main .sidebar .playlist .add .add__title {
+  opacity: 0.4;
+}
+main .sidebar .playlist .top .top__icon {
+  opacity: 0.5;
+}
+main .sidebar .playlist .top .top__title {
+  opacity: 0.6;
+}
+main .sidebar .playlist .top .top__trash {
+  opacity: 0.4;
+}
+main .sidebar .playlist .dance .dance__icon {
+  opacity: 0.5;
+}
+main .sidebar .playlist .dance .dance__title {
+  opacity: 0.6;
+}
+main .sidebar .playlist .dance .dance__trash {
+  opacity: 0.4;
+}
+main .sidebar .playlist .discover .discover__icon {
+  opacity: 0.8;
+}
+main .sidebar .playlist .discover .discover__title {
+  opacity: 0.9;
+}
+main .sidebar .playlist .discover .discover__pause {
+  opacity: 1;
+}
+main .sidebar .playlist .discover .discover__trash {
+  opacity: 0.4;
+}
+main .sidebar .playing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+main .sidebar .playing .playing__song-next {
+  opacity: 0.7;
+}
+main .sidebar .controls {
+  padding: 10px;
+}
+main .sidebar .controls .controls__menu {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+  align-items: center;
+}
+main .sidebar .controls .controls__menu .controls__range {
+  width: -moz-min-content;
+  width: min-content;
+  accent-color: #adff2f;
+}
+main .anexo {
+  padding: 10px;
+  background-color: #0e0505;
+  font-size: 16px;
+}
+@media screen and (max-width: 48rem) {
+  main .anexo {
+    width: 330px;
+    padding: 5px 5px;
+    margin: auto;
+    background-color: #2a1b1b;
+  }
+}
+main .anexo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+main .anexo h1 {
+  font-size: 20px;
+}
+main .anexo .anexo__resume p:first-child {
+  font-size: 14px;
+}
+main .anexo .anexo__resume p:last-child {
+  font-size: 18px;
+}
+main .anexo .anexo__music .music__album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 70rem) {
+  main .anexo .anexo__music .music__album {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 60rem) {
+  main .anexo .anexo__music .music__album {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 48rem) {
+  main .anexo .anexo__music .music__album {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+main .anexo .anexo__music .music__album .music__item {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+main .anexo .products__btn {
+  background-color: #fff;
+}
+main .anexo .products__btn--disable {
+  background-color: #888;
+}/*# sourceMappingURL=main.css.map */
