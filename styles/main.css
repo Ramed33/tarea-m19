@@ -1,7 +1,7 @@
-main .anexo .products__btn--disable, main .anexo .products__btn {
+.products__btn--disable, .products__btn {
   cursor: pointer;
   border-radius: 20px;
-  width: 50%;
+  width: 100%;
   font-weight: 700;
 }
 
@@ -9,7 +9,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #e2e2e2;
   font-weight: 600;
-  background-color: #2a1b1b;
+  background-color: #272828;
+}
+
+html, body {
+  margin: 0;
+}
+
+.products__btn {
+  background-color: #fff;
+}
+
+.products__btn--disable {
+  background-color: #ff0000;
 }
 
 main {
@@ -211,10 +223,4 @@ main .anexo .anexo__music .music__album .music__item {
   align-items: center;
   text-align: center;
   font-size: 12px;
-}
-main .anexo .products__btn {
-  background-color: #fff;
-}
-main .anexo .products__btn--disable {
-  background-color: #888;
 }/*# sourceMappingURL=main.css.map */
